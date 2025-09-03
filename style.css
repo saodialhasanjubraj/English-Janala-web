@@ -1,0 +1,20 @@
+.oneBtn {
+    height: 35px;
+    width: 100px;
+    border: 2px solid #422AD5;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    /* line-height:; */
+    font-family: Poppins;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
