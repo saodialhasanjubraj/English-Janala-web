@@ -31,11 +31,7 @@
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                        <img class="h-8 w-8" src="/assets/logo.png" alt="" srcset="">
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
@@ -48,7 +44,11 @@
 
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">daisyUI</a>
+                <a class="btn btn-ghost text-xl lg:flex hidden">
+                    <span>English</span>
+                    <img class="h-8 w-8" src="/assets/logo.png" alt="" srcset="">
+                    <span>জানালা</span>
+                </a>
             </div>
             <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 space-x-4">
@@ -68,27 +68,41 @@
         <!-- Navbar End here -->
         <main>
             <section class="heroSection flex items-center justify-between h-150" id="heroSeciton">
-                <div class="left">
-                    <h1>English is <span>Easy!!</span></h1>
-                    <p>আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
+                <div class="left flex flex-col gap-y-7">
+                    <h1 class="text-4xl font-bold"><span class="text-blue-700">English</span> is Easy!!</h1>
+                    <p class="bngFont">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার
+                        দক্ষতা বাড়াতে চান, আমাদের
                         Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
-                    <div class="inputFields flex flex-col items-start">
+                    <div class="inputFields flex flex-col gap-y-5">
                         <input type="text" placeholder="Enter your name" class="input input-neutral nameInput"
                             id="nameInput" />
                         <input type="password" placeholder="Enter password" class="input input-neutral passwordInput"
                             id="passwordInput" />
                     </div>
+                    <button class="btn btn-primary w-40">Get Starated</button>
                 </div>
                 <!-- left side -->
                 <div class="right">
                     <img src="/assets/hero-student.png" class="h-125 w-180" alt="" srcset="">
                 </div>
-
+            </section>
+            <section class="LetsLearnVocabulariesSection w-full flex flex-col items-center space-y-10"
+                id="LetsLearnVocabulariesSection">
+                <h1 class="font-bold text-3xl"><span class="text-blue-600">Let's </span> Learn Vocabularies</h1>
+                <div class="lessonsButtonsContainer flex space-x-5" id="lessonsButtonsContainer">
+                    <!-- Data come dynamacily -->
+                </div>
             </section>
 
+            <section class=" grid grid-cols-3 wordColumn  mt-40 bg-gray-100 p-10 w-11/12 mx-auto gap-x-2 space-y-2"
+                id="wordColumn">
+
+            </section>
         </main>
     </div>
 
+
+    <script src="web.js"></script>
 </body>
 
 </html>

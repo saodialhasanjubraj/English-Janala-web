@@ -1,22 +1,7 @@
-.oneBtn {
-    height: 35px;
-    width: 100px;
-    border: 2px solid #422AD5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Poppins;
-    border-radius: 4px;
-    line-height: 21px;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 500;
-
+* {
+    font-family: "Poppins";
 }
 
-.unFlex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.bngFont {
+    font-family: "Hind Siliguri";
 }
