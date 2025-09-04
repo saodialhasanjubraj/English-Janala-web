@@ -16,6 +16,16 @@ const loadlabelWrod = (id) => {
 const wordShowDisplay = (words) => {
     const wordColumn = document.getElementById('wordColumn')
     wordColumn.innerHTML = ""   //make card container empty before looping
+    if (words.length <= 0) {
+        // check if no api data found this empty massage show in display
+        wordColumn.innerHTML = `
+        <div class="flex flex-col space-y-2 col-span-full text-center">
+        <p class="font-bold">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+         <p>নেক্সট Lesson এ যান</p>
+        </div>
+         
+         `
+    }
     for (const word of words) {
         // console.log(word);
         const wordCardElement = document.createElement('div')
