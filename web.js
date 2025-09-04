@@ -25,7 +25,7 @@ const wordShowDisplay = (words) => {
             <span>Meaning/Pronounction</span>
             <span>${word.meaning}/${word.pronunciation}</span>
             <div class="icons flex w-full items-center justify-between px-5">
-            <i class="fa-solid fa-exclamation"></i>
+          <i class="fa-solid fa-info"></i>
             <i class="fa-solid fa-volume-high"></i>
             </div>
         </div>
@@ -35,7 +35,7 @@ const wordShowDisplay = (words) => {
 
 }
 
-
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //show dynamic lesson buttons
 const displayLession = (lessions) => {
     // 1. get the container and Empty it
