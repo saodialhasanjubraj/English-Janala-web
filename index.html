@@ -25,20 +25,68 @@
 </head>
 
 <body>
-    <div class="container w-full max-w-300 mx-auto" id="container">
-        <nav class="h-16 w-full flex items-center bg-[#BADEFF] justify-between px-10">
-            <div class="left unFlex gap-0.5">
-                <h1>English</h1>
-                <img src="/assets/logo.png" alt="" srcset="" class="h-8 w-8">
-                <h1>জানালা</h1>
-            </div>
-            <div class="right unFlex w-70">
-                <div class="faqBtn" id="faqBtn">FAQ</div>
-                <div class="learnBtn" id="learnBtn">Learn</div>
-                <div class="logoutBtn" id="logoutBtn">Logout</div>
 
+    <div class="container w-full max-w-300 mx-auto" id="container">
+        <nav class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <ul class="p-2">
+                            <li><a><i class="fa-solid fa-question"></i> FAQ</a></li>
+                            <li><a><i class="fa-solid fa-book"></i> Learn</a></li>
+                            <li><a><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                        </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 space-x-4">
+                    <li><a href="#" class="btn btn-outline btn-primary flex items-center gap-1"><i
+                                class="fa-solid fa-question"></i> FAQ</a>
+                    </li>
+                    <li><a href="#" class="btn btn-outline btn-primary flex items-center gap-1"><i
+                                class="fa-solid fa-book"></i> Learn</a></li>
+                    <li><a href="#" class="btn btn-outline btn-primary flex items-center gap-1"><i
+                                class="fa-solid fa-right-from-bracket"></i>
+                            Logout</a></li>
+                </ul>
             </div>
         </nav>
+
+
+        <!-- Navbar End here -->
+        <main>
+            <section class="heroSection flex items-center justify-between h-150" id="heroSeciton">
+                <div class="left">
+                    <h1>English is <span>Easy!!</span></h1>
+                    <p>আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
+                        Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                    <div class="inputFields flex flex-col items-start">
+                        <input type="text" placeholder="Enter your name" class="input input-neutral nameInput"
+                            id="nameInput" />
+                        <input type="password" placeholder="Enter password" class="input input-neutral passwordInput"
+                            id="passwordInput" />
+                    </div>
+                </div>
+                <!-- left side -->
+                <div class="right">
+                    <img src="/assets/hero-student.png" class="h-125 w-180" alt="" srcset="">
+                </div>
+
+            </section>
+
+        </main>
     </div>
 
 </body>
