@@ -63,11 +63,12 @@
                 </ul>
             </div>
         </nav>
-
-
         <!-- Navbar End here -->
+
+
         <main>
-            <section class="heroSection flex items-center justify-between h-150" id="heroSeciton">
+            <section class="heroSection flex lg:flex-row flex-col items-center justify-between lg:h-150 h-auto "
+                id="heroSeciton">
                 <div class="left flex flex-col gap-y-7">
                     <h1 class="text-4xl font-bold"><span class="text-blue-700">English</span> is Easy!!</h1>
                     <p class="bngFont">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার
@@ -83,24 +84,46 @@
                 </div>
                 <!-- left side -->
                 <div class="right">
-                    <img src="/assets/hero-student.png" class="h-125 w-180" alt="" srcset="">
+                    <img src="/assets/hero-student.png" class="lg:h-125 h-100 lg:w-180 w-120 " alt="" srcset="">
                 </div>
             </section>
+
             <section class="LetsLearnVocabulariesSection w-full flex flex-col items-center space-y-10"
                 id="LetsLearnVocabulariesSection">
                 <h1 class="font-bold text-3xl"><span class="text-blue-600">Let's </span> Learn Vocabularies</h1>
-                <div class="lessonsButtonsContainer flex space-x-5" id="lessonsButtonsContainer">
+                <div class="lessonsButtonsContainer lg:flex lg:space-x-5 space-x-2 grid grid-cols-2 space-y-4"
+                    id="lessonsButtonsContainer">
                     <!-- Data come dynamacily -->
                 </div>
             </section>
 
-            <section class=" grid grid-cols-3 wordColumn  mt-40 bg-gray-100 p-10 w-11/12 mx-auto gap-x-2 space-y-2"
+            <!-- <section id="loadingAnimation" class="w-full items-center justify-center hidden "> -->
+                <!-- loder Show  in disply Animation-->
+                <!-- <span class="loading loading-bars loading-lg"></span> -->
+            <!-- </section> -->
+            <section
+                class=" grid grid-cols-1 lg:grid-cols-3 wordColumn  mt-40 bg-gray-100 p-10 w-11/12 mx-auto gap-x-2 space-y-2"
                 id="wordColumn">
                 <div class="displayMessageBox col-span-full text-center">
-                    <p class="font-bold mb-1">আপনি এখনো কোন Lesson Select করেন ন</p>
+                    <p class="font-bold mb-1">আপনি এখনো কোন Lesson Select করেন</p>
                     <p>একটি Lesson Select করুন।</p>
                 </div>
             </section>
+
+            <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+            <dialog id="wordModal" class="modal">
+                <div class="modal-box">
+                    <div id="detailsContainer"></div>
+                    <div class="modal-action">
+                        <form method="dialog">
+
+
+                            <button class="btn">Complete Learning</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </main>
 
     </div>
